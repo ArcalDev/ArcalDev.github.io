@@ -59,3 +59,52 @@ nav li:hover {
     margin-bottom: 1rem;
   }
 }
+
+/* Banner */
+  
+#banner {
+  position: relative;
+  height: 250px;
+  padding: 0 25%;
+  background-size: cover;
+  text-align: center;
+  background-color: #00BFE2;
+}
+#banner h1 {
+  padding: 10px;
+  font-size: 26px;
+  color: #FFFFFF;
+}
+#banner p {
+  padding: 10px;
+  color: white;
+  font-size: 20;
+}
+
+/* Work Space */
+
+#workspace {
+  position: relative;
+  height: 400px;
+  padding: 5px;
+  background-color: #FFFFFF;
+  background-size: cover;
+  text-align: center;
+}
+
+/* Footer */
+  
+footer {
+  position: relative;
+  padding: 5px;
+  height: 40px;
+  background-color: #D2D2D2;
+  background-size: cover;
+  text-align: center;
+  font-size: 12px;
+  color: #D6001C;
+}
+footer p {
+  line-height: 20px;
+  display: block;
+}
