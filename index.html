@@ -16,13 +16,9 @@
         <div class="image-container logo">
             <img src="./resources/images/ctlogo.png" width="100">
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>                
-        </nav>
+        <div>
+            <h1>DRIVE SELECTOR</h1>
+        </div>
     </header>
     
     <!-- Main Section -->
@@ -32,6 +28,32 @@
             <p>But what drive should you choose? Let us help you select the right one for the application.</p>
         </div>
         <div id="workspace">
+          
+            <label for="voltage">Supply Voltage:</label>
+            <input id="voltage" name="voltage" type="number" required>
+            <label for="voltage">Volts</label>
+            <br>
+
+            <label for="current">Motor Current:</label>
+            <input id="current" name="current" type="number" required>
+            <label for="current">Amps</label>
+            <br>
+
+            <span>Communications Required:</span>
+            <input id="yes" type="radio" name="answer" value="yes" required>
+            <label for="yes">Yes</label>
+            <input id="no" type="radio" name="answer" value="no" required>
+            <label for="no">No</label>
+            <br>
+
+            <span>Operating Mode:</span>
+            <input id="ol" type="radio" name="answer" value="ol" required>
+            <label for="ol">Open Loop</label>
+            <input id="rfc" type="radio" name="answer" value="rfc" required>
+            <label for="rfc">Closed Loop</label>
+            <input id="rfs" type="radio" name="answer" value="rfs" required>
+            <label for="rfs">Servo</label>
+            <br>
 
         </div>
     </main>
