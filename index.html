@@ -14,7 +14,7 @@
     <!-- Header Section -->
     <header>
         <div class="image-container logo">
-            <img src="./resources/images/ctlogo.png" width="100">
+            <img src="./resources/images/Select.png" width="100">
         </div>
         <div>
             <h1>DRIVE SELECTOR</h1>
@@ -28,7 +28,9 @@
             <p>But what drive should you choose? Let us help you select the right one for the application.</p>
         </div>
         <div id="workspace">
-          
+            <h2>In order to get started tell us a bit more about your application.</h2>
+
+            <!-- Application Select -->
             <label for="application">Application:</label>
             <input id="application" name="application" type="text" required list="app-list">
             <datalist id="app-list">
@@ -37,17 +39,26 @@
                 <option value="Fly-wheel"></option>
             </datalist>
             <br>
-        
+            
+            <!-- Voltage Select -->
             <label for="voltage">Supply Voltage:</label>
-            <input id="voltage" name="voltage" type="number" required>
+            <input id="voltage" name="voltage" type="text" required list="volt-list">
+            <datalist id="volt-list">
+                <option value="230"></option>
+                <option value="400"></option>
+                <option value="525"></option>
+                <option value="690"></option>
+            </datalist>
             <label for="voltage">Volts</label>
             <br>
-
+            
+            <!-- Motor Current Select -->
             <label for="current">Motor Current:</label>
-            <input id="current" name="current" type="number" required>
+            <input id="current" name="current" type="number" required min="1" max="1800">
             <label for="current">Amps</label>
             <br>
 
+            <!-- Mode Select -->
             <span>Operating Mode:</span>
             <input id="ol" type="radio" name="mode" value="ol" required>
             <label for="ol">Open Loop</label>
@@ -57,16 +68,11 @@
             <label for="rfs">Servo</label>
             <br>
 
-            <span>Communications Required:</span>
-            <input id="yes" type="radio" name="answer" value="yes" required>
-            <label for="yes">Yes</label>
-            <input id="no" type="radio" name="answer" value="no" required>
-            <label for="no">No</label>
-            <br>
-
+            <!-- Coms Option Select -->
             <label for="comms">Communications:</label>
             <input id="comms" name="comms" type="text" required list="comms-list">
             <datalist id="comms-list">
+                <option value="None"></option>
                 <option value="Profibus-DP"></option>
                 <option value="Ethernet"></option>
                 <option value="ProfiNet"></option>
@@ -80,7 +86,7 @@
     <footer>
         <div id="footer">
             <p>Developed by Arcal Development</p>
-            <p>Copyright 2022</p>
+            <p>Copyright © 2022</p>
         </div>
     </footer>
     
