@@ -45,7 +45,7 @@ header .logo {
   position: relative;
   margin: 2% 2%;
   border-radius: 10px;
-  height: 250px;
+  height: 200px;
   padding: 2% 2%;
   background-size: cover;
   text-align: center;
@@ -71,7 +71,7 @@ header .logo {
 
 #workspace {
   position: relative;
-  height: 600px;
+  height: 400px;
   padding: 10px;
   background-color: #8fa2a6;
   background-size: cover;
