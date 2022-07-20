@@ -29,6 +29,15 @@
         </div>
         <div id="workspace">
           
+            <label for="application">Application:</label>
+            <input id="application" name="application" type="text" required list="app-list">
+            <datalist id="app-list">
+                <option value="Pump"></option>
+                <option value="Fan"></option>
+                <option value="Fly-wheel"></option>
+            </datalist>
+            <br>
+        
             <label for="voltage">Supply Voltage:</label>
             <input id="voltage" name="voltage" type="number" required>
             <label for="voltage">Volts</label>
@@ -39,13 +48,6 @@
             <label for="current">Amps</label>
             <br>
 
-            <span>Communications Required:</span>
-            <input id="yes" type="radio" name="answer" value="yes" required>
-            <label for="yes">Yes</label>
-            <input id="no" type="radio" name="answer" value="no" required>
-            <label for="no">No</label>
-            <br>
-
             <span>Operating Mode:</span>
             <input id="ol" type="radio" name="mode" value="ol" required>
             <label for="ol">Open Loop</label>
@@ -53,6 +55,22 @@
             <label for="rfc">Closed Loop</label>
             <input id="rfs" type="radio" name="mode" value="rfs" required>
             <label for="rfs">Servo</label>
+            <br>
+
+            <span>Communications Required:</span>
+            <input id="yes" type="radio" name="answer" value="yes" required>
+            <label for="yes">Yes</label>
+            <input id="no" type="radio" name="answer" value="no" required>
+            <label for="no">No</label>
+            <br>
+
+            <label for="comms">Communications:</label>
+            <input id="comms" name="comms" type="text" required list="comms-list">
+            <datalist id="comms-list">
+                <option value="Profibus-DP"></option>
+                <option value="Ethernet"></option>
+                <option value="ProfiNet"></option>
+            </datalist>
             <br>
 
         </div>
