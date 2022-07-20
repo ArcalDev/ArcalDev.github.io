@@ -24,16 +24,18 @@
     <!-- Main Section -->
     <main>
         <div id="banner">
-            <h1>So you need to drive to control your motor? Well you are in luck we have lots of those!</h1>
+            <h1>So you need a variable speed drive to control your motor? Well you are in luck we have lots of those!</h1>
             <p>But what drive should you choose? Let us help you select the right one for the application.</p>
         </div>
         <div id="workspace">
-            <h2>In order to get started tell us a bit more about your application.</h2>
+            <h2>In order to get started tell us a bit more!</h2>
 
             <!-- Application Select -->
-            <label for="application">Application:</label>
+            <label for="application">Select Application</label>
+            <br>
             <input id="application" name="application" type="text" required list="app-list">
             <datalist id="app-list">
+                <option value="Not Sure"></option>
                 <option value="Pump"></option>
                 <option value="Fan"></option>
                 <option value="Fly-wheel"></option>
@@ -41,7 +43,8 @@
             <br>
             
             <!-- Voltage Select -->
-            <label for="voltage">Supply Voltage:</label>
+            <label for="voltage">Select Supply Voltage</label>
+            <br>
             <input id="voltage" name="voltage" type="text" required list="volt-list">
             <datalist id="volt-list">
                 <option value="230"></option>
@@ -53,13 +56,17 @@
             <br>
             
             <!-- Motor Current Select -->
-            <label for="current">Motor Current:</label>
+            <label for="current">Enter Motor Current</label>
+            <br>
             <input id="current" name="current" type="number" required min="1" max="1800">
             <label for="current">Amps</label>
             <br>
+            <p id="tip">Tip: Entering the motor rated current on the nameplate will ensure the drive is sized accordingly.</p>
+            <br>
 
             <!-- Mode Select -->
-            <span>Operating Mode:</span>
+            <span>Select Operating Mode</span>
+            <br>
             <input id="ol" type="radio" name="mode" value="ol" required>
             <label for="ol">Open Loop</label>
             <input id="rfc" type="radio" name="mode" value="rfc" required>
@@ -67,9 +74,11 @@
             <input id="rfs" type="radio" name="mode" value="rfs" required>
             <label for="rfs">Servo</label>
             <br>
+            <br>
 
             <!-- Coms Option Select -->
-            <label for="comms">Communications:</label>
+            <label for="comms">Select Communication Option</label>
+            <br>
             <input id="comms" name="comms" type="text" required list="comms-list">
             <datalist id="comms-list">
                 <option value="None"></option>
@@ -79,6 +88,10 @@
             </datalist>
             <br>
 
+            <br>
+            <button id="button" type="button">
+                Reccomend!
+            </button>
         </div>
     </main>
 

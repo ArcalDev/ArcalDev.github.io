@@ -72,7 +72,7 @@ header .logo {
 #workspace {
   position: relative;
   height: 400px;
-  padding: 10px;
+  padding: 5px;
   background-color: #8fa2a6;
   background-size: cover;
   text-align: center;
@@ -82,8 +82,14 @@ header .logo {
 }
 #workspace h2 {
   padding: 10px;
-  text-decoration: underline;
   font-size: 24px;
+}
+label {
+  color: white;
+  padding: 1px;
+}
+span {
+  color: white;
 }
 input[type="text"], input[type="number"] {
   min-height: 20px;
@@ -96,11 +102,17 @@ input[type="text"], input[type="number"] {
 input[type="radio"] {
   margin: 3px;
 }
-label {
-  color: white;
+#tip {
+  font-size: 12px;
+  font-style: italic;
+  color: #000000;
+  padding: 1px;
 }
-span {
-  color: white;
+#button {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #b8a390;
 }
 
 /* Footer */
